@@ -9,6 +9,6 @@ A program that shows you the weather forecast for the next few days from any loc
 
 # What I Learned
 
-* Using data structures/algorithms to efficiently organize data
+* Use data structures/algorithms to efficiently organize data
 * Object Oriented Programming and Design
 * API calling basics
