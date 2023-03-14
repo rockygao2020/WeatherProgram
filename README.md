@@ -4,7 +4,7 @@ A program that shows you the weather forecast for the next few days from any loc
 
 # Requirements
 
-1. Download [CURL](https://curl.se/download.html).
+1. Download [CURL](https://curl.se/download.html) zip folder.
 2. Build and Link CURL as a static library with the main project.
 
 # What I Learned
