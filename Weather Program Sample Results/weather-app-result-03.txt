@@ -1,0 +1,131 @@
+ENTER A CITY:
+not a real city
+USING THE FOLLOWING URL: http://api.openweathermap.org/geo/1.0/direct?q=not_a_real_city&limit=5&appid=2545169a3f0f1c836108f7a40a5744b0
+*   Trying 192.241.187.136:80...
+* Connected to api.openweathermap.org (192.241.187.136) port 80 (#0)
+> GET /geo/1.0/direct?q=not_a_real_city&limit=5&appid=2545169a3f0f1c836108f7a40a5744b0 HTTP/1.1
+Host: api.openweathermap.org
+Accept: */*
+
+< HTTP/1.1 200 OK
+< Server: openresty
+< Date: Mon, 13 Mar 2023 22:52:43 GMT
+< Content-Type: application/json; charset=utf-8
+< Content-Length: 2
+< Connection: keep-alive
+< X-Cache-Key: /geo/1.0/direct?limit=5&q=not_a_real_city
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Credentials: true
+< Access-Control-Allow-Methods: GET, POST
+<
+* Connection #0 to host api.openweathermap.org left intact
+
+INVALID INPUT: GIVE A VALID CITY NAME
+Enter a city:
+canora
+USING THE FOLLOWING URL: http://api.openweathermap.org/geo/1.0/direct?q=canora&limit=5&appid=2545169a3f0f1c836108f7a40a5744b0
+*   Trying 192.241.187.136:80...
+* Connected to api.openweathermap.org (192.241.187.136) port 80 (#0)
+> GET /geo/1.0/direct?q=canora&limit=5&appid=2545169a3f0f1c836108f7a40a5744b0 HTTP/1.1
+Host: api.openweathermap.org
+Accept: */*
+
+< HTTP/1.1 200 OK
+< Server: openresty
+< Date: Mon, 13 Mar 2023 22:52:45 GMT
+< Content-Type: application/json; charset=utf-8
+< Content-Length: 177
+< Connection: keep-alive
+< X-Cache-Key: /geo/1.0/direct?limit=5&q=canora
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Credentials: true
+< Access-Control-Allow-Methods: GET, POST
+<
+* Connection #0 to host api.openweathermap.org left intact
+
+CHOOSE THE DESIRED CITY BY ENTERING ITS CORRESPONDING INTEGER:
+        INTEGER   NAME                          COUNTRY   STATE
+        1         Canora                        CA        Saskatchewan
+        2         Canora                        CA        Alberta
+-1
+INVALID INPUT: INTEGER MUST BE FROM 1-2
+5
+INVALID INPUT: INTEGER MUST BE FROM 1-2
+2
+CHOSEN CITY:
+        2         Canora                        CA        Alberta
+
+USING THE FOLLOWING URL: https://api.openweathermap.org/data/2.5/weather?lat=53.546165&lon=-113.584106&appid=2545169a3f0f1c836108f7a40a5744b0&units=imperial
+*   Trying 192.241.187.136:443...
+* Connected to api.openweathermap.org (192.241.187.136) port 443 (#0)
+* schannel: disabled automatic use of client certificate
+* ALPN: offers http/1.1
+* ALPN: server accepted http/1.1
+* using HTTP/1.1
+> GET /data/2.5/weather?lat=53.546165&lon=-113.584106&appid=2545169a3f0f1c836108f7a40a5744b0&units=imperial HTTP/1.1
+Host: api.openweathermap.org
+Accept: */*
+
+< HTTP/1.1 200 OK
+< Server: openresty
+< Date: Mon, 13 Mar 2023 22:52:57 GMT
+< Content-Type: application/json; charset=utf-8
+< Content-Length: 493
+< Connection: keep-alive
+< X-Cache-Key: /data/2.5/weather?lat=53.55&lon=-113.58&units=imperial
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Credentials: true
+< Access-Control-Allow-Methods: GET, POST
+<
+* Connection #0 to host api.openweathermap.org left intact
+USING THE FOLLOWING URL: api.openweathermap.org/data/2.5/forecast?lat=53.546165&lon=-113.584106&appid=2545169a3f0f1c836108f7a40a5744b0&units=imperial
+*   Trying 192.241.187.136:80...
+* Connected to api.openweathermap.org (192.241.187.136) port 80 (#0)
+> GET /data/2.5/forecast?lat=53.546165&lon=-113.584106&appid=2545169a3f0f1c836108f7a40a5744b0&units=imperial HTTP/1.1
+Host: api.openweathermap.org
+Accept: */*
+
+< HTTP/1.1 200 OK
+< Server: openresty
+< Date: Mon, 13 Mar 2023 22:52:57 GMT
+< Content-Type: application/json; charset=utf-8
+< Content-Length: 15923
+< Connection: keep-alive
+< X-Cache-Key: /data/2.5/forecast?lat=53.55&lon=-113.58&units=imperial
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Credentials: true
+< Access-Control-Allow-Methods: GET, POST
+<
+* Connection #0 to host api.openweathermap.org left intact
+
+TODAY'S WEATHER FORECAST:
+        DATE:               Mon Mar 13 03:52:58 PM 2023
+        CURR_TEMP:          18.72
+        MAX_TEMP:           21.13
+        MIN_TEMP:           13.28
+        AVG_WEATHER:        Snow
+        HUMIDITY:           66
+        WD_SPEED:           12.66
+        WD_DIRECTION:       80
+
+TUESDAY'S WEATHER FORECAST:
+        DATE:               Tue Mar 14
+        MAX_TEMP:           24.22
+        MIN_TEMP:           2.28
+        AVG_WEATHER:        Snow
+
+WEDNESDAY'S WEATHER FORECAST:
+        DATE:               Wed Mar 15
+        MAX_TEMP:           18.57
+        MIN_TEMP:           -5.19
+        AVG_WEATHER:        Clouds
+
+THURSDAY'S WEATHER FORECAST:
+        DATE:               Thu Mar 16
+        MAX_TEMP:           31.39
+        MIN_TEMP:           1.06
+        AVG_WEATHER:        Clouds
+
+C:\My Files\PROJECTS\WeatherApp\x64\Debug\WeatherApp.exe (process 13128) exited with code 0.
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .
